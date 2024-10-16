@@ -1,4 +1,4 @@
-*[INFO ]-- Starting SpbApplication using Java 21.0.2 with PID 15692 (D:\selvamuthukumar\ngboot\spb\target\classes started by selvamuthukumar.s in D:\selvamuthukumar\ngboot\spb)--
+*[INFO ]-- Starting SpbApplication using Java 21.0.2 with PID 11132 (D:\selvamuthukumar\ngboot\spb\target\classes started by selvamuthukumar.s in D:\selvamuthukumar\ngboot\spb)--
 *[INFO ]-- No active profile set, falling back to 1 default profile: "default"--
 *[INFO ]-- Starting service [Tomcat]--
 *[INFO ]-- Starting Servlet engine: [Apache Tomcat/10.1.28]--
@@ -6,8 +6,120 @@
 *[INFO ]-- HikariPool-1 - Starting...--
 *[INFO ]-- HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/spb user=SA--
 *[INFO ]-- HikariPool-1 - Start completed.--
-*[INFO ]-- Started SpbApplication in 7.137 seconds (process running for 7.927)--
+*[INFO ]-- Started SpbApplication in 3.777 seconds (process running for 4.247)--
 *[INFO ]-- Initializing Spring DispatcherServlet 'dispatcherServlet'--
+*[INFO ]-- Before method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- After method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- After method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- After method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- After method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- Before method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- After method:List com.kgisl.spb.Service.TicketService.getallTickets()--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getallTickets--
+*[INFO ]-- Arguments :  []--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- Before method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
+*[INFO ]-- After method:Tickets com.kgisl.spb.Service.TicketService.getoneTicket(Integer)--
+*[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
+*[INFO ]-- Entering in Method :  getoneTicket--
+*[INFO ]-- Arguments :  [12]--
 *[INFO ]-- Before method:List com.kgisl.spb.Service.TicketService.getallTickets()--
 *[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--
 *[INFO ]-- Entering in Method :  getallTickets--
@@ -18,7 +130,7 @@
 *[INFO ]-- Arguments :  []--
 *[INFO ]-- HikariPool-1 - Shutdown initiated...--
 *[INFO ]-- HikariPool-1 - Shutdown completed.--
-*[INFO ]-- Starting SpbApplication using Java 21.0.2 with PID 21488 (D:\selvamuthukumar\ngboot\spb\target\classes started by selvamuthukumar.s in D:\selvamuthukumar\ngboot\spb)--
+*[INFO ]-- Starting SpbApplication using Java 21.0.2 with PID 23472 (D:\selvamuthukumar\ngboot\spb\target\classes started by selvamuthukumar.s in D:\selvamuthukumar\ngboot\spb)--
 *[INFO ]-- No active profile set, falling back to 1 default profile: "default"--
 *[INFO ]-- Starting service [Tomcat]--
 *[INFO ]-- Starting Servlet engine: [Apache Tomcat/10.1.28]--
@@ -26,7 +138,31 @@
 *[INFO ]-- HikariPool-1 - Starting...--
 *[INFO ]-- HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/spb user=SA--
 *[INFO ]-- HikariPool-1 - Start completed.--
-*[INFO ]-- Started SpbApplication in 5.768 seconds (process running for 6.536)--
+*[INFO ]-- HikariPool-1 - Shutdown initiated...--
+*[INFO ]-- HikariPool-1 - Shutdown completed.--
+*[ERROR]-- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+--
+*[INFO ]-- Starting SpbApplication using Java 21.0.2 with PID 14536 (D:\selvamuthukumar\ngboot\spb\target\classes started by selvamuthukumar.s in D:\selvamuthukumar\ngboot\spb)--
+*[INFO ]-- No active profile set, falling back to 1 default profile: "default"--
+*[INFO ]-- Starting service [Tomcat]--
+*[INFO ]-- Starting Servlet engine: [Apache Tomcat/10.1.28]--
+*[INFO ]-- Initializing Spring embedded WebApplicationContext--
+*[INFO ]-- HikariPool-1 - Starting...--
+*[INFO ]-- HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/spb user=SA--
+*[INFO ]-- HikariPool-1 - Start completed.--
+*[INFO ]-- Started SpbApplication in 3.377 seconds (process running for 3.854)--
 *[INFO ]-- Initializing Spring DispatcherServlet 'dispatcherServlet'--
 *[INFO ]-- Before method:List com.kgisl.spb.Service.TicketService.getallTickets()--
 *[INFO ]-- Class Name :  com.kgisl.spb.Service.TicketService--

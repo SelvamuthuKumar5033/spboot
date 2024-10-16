@@ -20,7 +20,7 @@ import com.kgisl.spb.Service.TicketService;
 
 
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping("/app")
+@RequestMapping("/tickets")
 @RestController
 public class TicketsController {
 
