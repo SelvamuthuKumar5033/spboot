@@ -2,22 +2,26 @@ logging:
   level:
     ROOT: INFO
     org.springframework: ERROR
-    org.hibernate: ERROR
+    org.hibernate: DEBUG  # Set to DEBUG for detailed Hibernate logs
+    org.hibernate.SQL: DEBUG  # Log SQL queries
+    org.hibernate.type: TRACE  # Log SQL parameters
     com.kgisl.spb: INFO
- 
   pattern:
     console: "- %msg%n"
     file: "*[%-5p]-- %m--%n"
   file:
     name: logs/spb.log
+ 
 server:
   port: 8081
+ 
 spring:
   datasource:
     url: jdbc:h2:file:~/spb
     username: sa
     password: sa
     driverClassName: org.h2.Driver
+    initialization-mode: always  # Ensure schema.sql gets executed
   h2:
     console:
       enabled: true
@@ -27,5 +31,5 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: update  # or create, create-drop, none, depending on your needs
-      show-sql: true  # Optional, to show SQL queries in the logs
+      ddl-auto: update  # Options: create, create-drop, update, none
+      show-sql: true  # Show SQL queries in logs
