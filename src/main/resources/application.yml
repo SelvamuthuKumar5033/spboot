@@ -24,3 +24,8 @@ spring:
       path: /h2
       settings:
         web-allow-others: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update  # or create, create-drop, none, depending on your needs
+      show-sql: true  # Optional, to show SQL queries in the logs

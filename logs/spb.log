@@ -174,3 +174,27 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 *[INFO ]-- Arguments :  []--
 *[INFO ]-- HikariPool-1 - Shutdown initiated...--
 *[INFO ]-- HikariPool-1 - Shutdown completed.--
+*[INFO ]-- Starting SpbApplication using Java 21.0.2 with PID 13576 (D:\selvamuthukumar\ngboot\spb\target\classes started by selvamuthukumar.s in D:\selvamuthukumar\ngboot\spb)--
+*[INFO ]-- No active profile set, falling back to 1 default profile: "default"--
+*[INFO ]-- Starting service [Tomcat]--
+*[INFO ]-- Starting Servlet engine: [Apache Tomcat/10.1.28]--
+*[INFO ]-- Initializing Spring embedded WebApplicationContext--
+*[INFO ]-- HikariPool-1 - Starting...--
+*[INFO ]-- HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/spb user=SA--
+*[INFO ]-- HikariPool-1 - Start completed.--
+*[INFO ]-- HikariPool-1 - Shutdown initiated...--
+*[INFO ]-- HikariPool-1 - Shutdown completed.--
+*[ERROR]-- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+--
