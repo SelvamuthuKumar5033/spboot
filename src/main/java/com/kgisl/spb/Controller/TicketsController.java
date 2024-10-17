@@ -27,9 +27,9 @@ public class TicketsController {
     @Autowired
     private TicketService ticketService;
 
-    public TicketsController(TicketService ticketService) {
-        this.ticketService = ticketService;
-    }
+    // public TicketsController(TicketService ticketService) {
+    //     this.ticketService = ticketService;
+    // }
 
     @GetMapping
     public ResponseEntity<List<Tickets>> getalltickets() {

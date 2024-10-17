@@ -9,7 +9,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class SpbApplication {
 
 	public static void main(String[] args) {
-		System.out.println("Welcom to Spring-Boot");
+		System.out.println("Welcome to Spring-Boot");
 		SpringApplication.run(SpbApplication.class, args);
 	}
 
