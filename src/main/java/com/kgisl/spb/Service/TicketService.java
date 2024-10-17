@@ -39,7 +39,7 @@ public class TicketService {
                     newTickets.ticketername(),
                     newTickets.ticketdate(),
                     newTickets.ticketdesc(),
-                    newTickets.tickettime());`
+                    newTickets.tickettime());
 
             return ticketRepository.save(updatedTicket);
         }
