@@ -30,9 +30,9 @@
 		<url />
 	</scm>
 
-<!-- 	<properties>
+	<properties>
 		<java.version>21</java.version>
-	</properties> -->
+	</properties>
 
 	<dependencies>
 
