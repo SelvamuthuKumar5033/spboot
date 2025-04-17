@@ -14,7 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spb</name>
 	<description>Demo project for Spring Boot</description>
-
+	<packaging>war</packaging>
 	<url />
 	<licenses>
 		<license />
@@ -88,21 +88,27 @@
 
 		<!-- Other dependencies as needed -->
 
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency> -->
+		</dependency>
 
-		<!-- <dependency>
+		<dependency>
 			<groupId>jakarta.persistence</groupId>
 			<artifactId>jakarta.persistence-api</artifactId>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
 		</dependency> -->
+
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 
 	</dependencies>
 
@@ -144,6 +150,16 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<plugin>
+			  	<groupId>org.apache.maven.plugins</groupId>
+  				<artifactId>maven-compiler-plugin</artifactId>
+  				<version>3.11.0</version> <!-- Or 3.13.0 if you prefer -->
+  				<configuration>
+    				<release>21</release>
+  				</configuration>
+			</plugin>
+
 		</plugins>
 
 	</build>
