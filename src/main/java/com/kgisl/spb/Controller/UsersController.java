@@ -43,7 +43,7 @@ public class UsersController {
         }
         if (userobj) {
             Users newuser = usersServices.createnewuser(user);
-            return new ResponseEntity<>(newuser, HttpStatus.CREATED);
+            return new ResponseEntity<>(newuser, HttpStatus.CREATED);   
         }
         return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
     }
