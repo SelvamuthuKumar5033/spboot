@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+    <deployment>
+        <exclusions>
+            <!-- Exclude nothing - let JBoss provide all logging -->
+        </exclusions>
+        <dependencies>
+            <!-- Explicitly use JBoss logging modules -->
+            <module name="org.slf4j" export="true"/>
+            <module name="org.apache.commons.logging" export="true"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

@@ -7,7 +7,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.3</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath />
 	</parent>
 	<groupId>com.kgisl</groupId>
 	<artifactId>spb</artifactId>
@@ -15,20 +15,6 @@
 	<name>spb</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>war</packaging>
-	<url />
-	<licenses>
-		<license />
-	</licenses>
-	<developers>
-		<developer />
-	</developers>
-
-	<scm>
-		<connection />
-		<developerConnection />
-		<tag />
-		<url />
-	</scm>
 
 	<properties>
 		<java.version>21</java.version>
@@ -36,26 +22,56 @@
 
 	<dependencies>
 
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency> -->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
-		<!-- <dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- SLF4J API only (JBoss will provide implementation) -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Jakarta Servlet API -->
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -67,17 +83,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-    		<groupId>org.springframework.boot</groupId>
-    		<artifactId>spring-boot-starter-tomcat</artifactId>
-    		<scope>provided</scope>
-		</dependency>
-
-		<dependency>	
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -92,8 +103,6 @@
 			<version>8.0.32</version>
 		</dependency>
 
-		<!-- Other dependencies as needed -->
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -103,21 +112,6 @@
 		<dependency>
 			<groupId>jakarta.persistence</groupId>
 			<artifactId>jakarta.persistence-api</artifactId>
-		</dependency>
-
-		<!-- <dependency>
-			<groupId>org.hibernate.orm</groupId>
-			<artifactId>hibernate-core</artifactId>
-		</dependency> -->
-
-		<!-- <dependency>
-    		<groupId>org.springframework.boot</groupId>
-    		<artifactId>spring-boot-starter-security</artifactId>
-		</dependency> -->
-
-		<dependency>
-    		<groupId>org.springframework.boot</groupId>
-    		<artifactId>spring-boot-starter-undertow</artifactId>
 		</dependency>
 
 	</dependencies>
@@ -138,8 +132,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-
-
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 
 			<plugin>
@@ -162,12 +162,18 @@
 			</plugin>
 
 			<plugin>
-			  	<groupId>org.apache.maven.plugins</groupId>
-  				<artifactId>maven-compiler-plugin</artifactId>
-  				<version>3.11.0</version> <!-- Or 3.13.0 if you prefer -->
-  				<configuration>
-    				<release>21</release>
-  				</configuration>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version>
+				<configuration>
+					<release>21</release>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.2</version>
 			</plugin>
 
 		</plugins>
